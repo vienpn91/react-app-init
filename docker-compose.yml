@@ -6,3 +6,10 @@ services:
     - 8000:8000
     volumes:
     - ./server_django:/usr/src/app
+  react-app:
+    build: ./react-app
+    ports:
+    - 3000:3000
+    volumes:
+    - ./react-app:/usr/src/app
+    - /usr/src/app/node_modules

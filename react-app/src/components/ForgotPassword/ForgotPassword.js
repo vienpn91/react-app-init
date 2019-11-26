@@ -1,16 +1,16 @@
 import React, { Component } from 'react';
-import LoginForm from './LoginForm';
 import BackgroundLeft from '../BackgroundLeft';
+import ForgotPasswordForm from './ForgotPasswordForm';
 import {
   RegisterPageContainer,
   RegisterPageWrap,
   RegisterRightWrap,
   RegisterFormWrap,
   RegisterTitle,
-  RegisterTitleText,
+  RegisterTitleSub,
 } from '../RegisterPage/RegisterPage.style';
 
-class LoginPage extends Component {
+class ForgotPassword extends Component {
   render() {
     return (
       <RegisterPageContainer>
@@ -18,11 +18,11 @@ class LoginPage extends Component {
           <BackgroundLeft />
 
           <RegisterRightWrap>
-            <RegisterTitle>SiteVibes</RegisterTitle>
-            <RegisterTitleText>Welcome back, good to see you again!</RegisterTitleText>
+            <RegisterTitle>Forgot your password ?</RegisterTitle>
+            <RegisterTitleSub>Enter your email to reset password</RegisterTitleSub>
 
             <RegisterFormWrap>
-              <LoginForm />
+              <ForgotPasswordForm />
             </RegisterFormWrap>
           </RegisterRightWrap>
         </RegisterPageWrap>
@@ -31,4 +31,4 @@ class LoginPage extends Component {
   }
 }
 
-export default LoginPage;
+export default ForgotPassword;

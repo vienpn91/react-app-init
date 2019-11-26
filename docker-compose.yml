@@ -3,7 +3,7 @@ services:
   django-rest:
     build: ./server_django
     ports:
-    - 8000:8000
+    - 8100:8000
     volumes:
     - ./server_django:/usr/src/app
   react-app:

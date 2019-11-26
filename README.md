@@ -1,5 +1,5 @@
 # Project Info
-- Title: Site Vibers
+- Title: SiteVibes
 - Owner: Mike Matker
 - Duration: 3 sprints (6 weeks)
 - Collaborators:

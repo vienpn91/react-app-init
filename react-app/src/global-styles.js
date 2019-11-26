@@ -42,7 +42,7 @@ html, body, div, span, applet, object, iframe,
     border-collapse: collapse;
     border-spacing: 0;
   }
-  body *{
+  body * {
     box-sizing: border-box;
   }
   body {
@@ -55,37 +55,26 @@ html, body, div, span, applet, object, iframe,
   body.fontLoaded {
     font-family: 'Open Sans', sans-serif;
   }
-  html {
-    scroll-behavior: smooth;
-  }
-  .ReactModal__Body--open{
-    overflow: hidden;
-  }
   html, body {
     height: 100%;
     min-height: 100%;
     min-width: 100%;
+    // scroll-behavior: smooth;
   }
+
+  button, a, i {
+    cursor: pointer;
+    &:hover {
+      opacity: .8;
+    }
+  }
+
   #app {
     background-color: #fafafa;
     min-height: 100%;
     min-width: 100%;
   }
-  .Popover {
-    z-index: 9;
-    color: #fff;
-    left: calc(100% - 500px)!important;
-  }
-  .ReactModalPortal {
-    position: fixed;
-    z-index: 1000;
-  }
-  .Popover-tip{
-    transform: translateX(400.078px)!important;
-    @media (max-width: 960px) {
-      transform: translateX(426.078px)!important;      
-    }
-  }
+
   input{
     &:focus {
       outline: 0;

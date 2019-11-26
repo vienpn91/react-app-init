@@ -10,6 +10,7 @@ import Routes from './routers';
 import configureStore from './store/configureStore';
 import { DefaultThemes } from './stylesheets/themes/DefaultThemes.style';
 import GlobalStyle from './global-styles';
+import 'antd/dist/antd.css';
 
 export const { store, persistor } = configureStore({}, history);
 

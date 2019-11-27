@@ -20,26 +20,17 @@ export const RegisterRightWrap = styled.div`
 
 export const RegisterFormWrap = styled.div`
   width: calc(100% - 10em);
-  .ant-form-item {
-    margin-bottom: 10px;
-  }
-  .ant-form-item-label {
-    line-height: 28px;
-    font-weight: 600;
-    label{
-      &:after {
-        content: none;
-      }
-    }
-  }
   .submit-button {
     margin-top: 3em;
     text-align: center;
     button {
-      background-color: #384141;
-      border-color: #384141;
+      background-color: ${props => props.theme.colorStyled.ColorDarkGreen};
+      border-color: ${props => props.theme.colorStyled.ColorDarkGreen};
       height: 40px;
       font-weight: bold;
+      span {
+        color: ${props => props.theme.colorStyled.ColorWhite};
+      }
     }
   }
 `;
@@ -50,7 +41,7 @@ export const RegisterTitle = styled.div`
 `;
 
 export const RegisterTitleSub = styled.div`
-  color: #9b9b9b;
+  color: ${props => props.theme.colorStyled.ColorDarkGrey};
   margin-bottom: 3em;
 `;
 
@@ -63,11 +54,11 @@ export const RegisterDescription = styled.div`
   width: calc(100% - 10em);
   margin-top: 2em;
   text-align: center;
-  color: #9b9b9b;
+  color: ${props => props.theme.colorStyled.ColorDarkGrey};
   span {
     font-weight: 600;
     margin: 0 5px;
-    color: #4895ab;
+    color: ${props => props.theme.colorStyled.ColorMidBlue};
   }
 `;
 
@@ -75,13 +66,16 @@ export const RegisterAction = styled.div`
   display: flex;
   flex-direction: column;
   .login-form-button {
-    background-color: #7bc867;
-    border-color: #7bc867;
+    background-color: ${props => props.theme.colorStyled.ColorGreen};
+    border-color: ${props => props.theme.colorStyled.ColorGreen};
     font-weight: bold;
     height: 36px;
+    span {
+      color: ${props => props.theme.colorStyled.ColorWhite}; 
+    }
     &:hover {
-      background-color: #7bc867;
-      border-color: #7bc867;
+      background-color: ${props => props.theme.colorStyled.ColorGreen};
+      border-color: ${props => props.theme.colorStyled.ColorGreen};
     }
   }
   > span {
@@ -89,14 +83,14 @@ export const RegisterAction = styled.div`
     a {
       margin-left: 5px;
       font-weight: 600;
-      color: #4895ab;
+      color: ${props => props.theme.colorStyled.ColorMidBlue};
     }
   }
 `;
 
 export const RegisterForgot = styled.a`
   font-weight: 600;
-  color: #4895ab;
+  color: ${props => props.theme.colorStyled.ColorMidBlue};
   margin-left: auto;
   line-height: 40px;
   text-align: right;

@@ -1,13 +1,14 @@
 import React, { PureComponent } from 'react';
-import { Layout } from 'antd';
-
-import { PrimaryLayout, RightContent } from './MainLayout.style';
 import LeftSiderbar from '../LeftSidebar/LeftSiderbar';
+import {
+  PrimaryLayout,
+  RightContent
+} from './MainLayout.style';
 
 export default class MainLayout extends PureComponent {
   static propTypes = {};
 
-  render() {
+  render() { 
     return (
       <PrimaryLayout>
         <LeftSiderbar />

@@ -12,9 +12,10 @@ export const DefaultThemes = {
   paddingSite: {
     XXXSmallMobileFontSize: '9px',
   },
-  boxShandow: {
+  boxShadow: {
     loginPage: '0px 0px 17px -3px #2a3a516e',
-    headerTable: '0px 2px 7px 1px #7170701a;',
+    headerTable: '0px 2px 7px 1px #7170701a',
+    boxModal: '0px 0px 10px 1px #ddd',
   },
   fontSize: {
     XXXSmallMobileFontSize: '9px',
@@ -60,7 +61,8 @@ export const DefaultThemes = {
     ColorSecond: '#586069',
     ColorLabel: '#586069',
     ColorGrey: '#dfdfdf',
-    ColorDarkGrey: '#6e6c83',
+    ColorBorder: '#dddddd',
+    ColorDarkGrey: '#9b9b9b',
     ColorMidGrey: '#4a4a4a',
     ColoraBtnPrimary: '#2697ea',
     ColoraBtnPrimaryDisabled: '#898c8e',
@@ -82,5 +84,11 @@ export const DefaultThemes = {
     ColorOverLay: '#1d1d1d70',
     ColorSusscess: '#05ca05',
     ColorEdit: '#00000087',
+
+    ColorPurple: '#9b59b6',
+    ColorGreen: '#7bc867',
+    ColorMidBlue: '#4895ab',
+    ColorMidGreen: '#38785c',
+    ColorDarkGreen: '#384141',
   },
 };

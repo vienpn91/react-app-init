@@ -48,6 +48,7 @@ html, body, div, span, applet, object, iframe,
   body {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    overflow: hidden;
     @media (max-width: 480px){
       font-size: 12px;
     }
@@ -107,6 +108,22 @@ html, body, div, span, applet, object, iframe,
       color: #262626;
       font-style: italic;
     }
+  }
+  .ant-form-item {
+    margin-bottom: 10px !important;
+  }
+  .ant-form-item-label {
+    line-height: 28px !important;
+    font-weight: 600;
+    label{
+      &:after {
+        content: none !important;;
+      }
+    }
+  }
+  .ant-select-selection,
+  .ant-input {
+    border-color: #aaa;
   }
 `;
 

@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import RegisterPage from '../../components/RegisterPage/RegisterPage';
+import RegisterPage from '../../components/RegisterPage';
 
 const mapStateToProps = () => ({});
 

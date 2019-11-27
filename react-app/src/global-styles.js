@@ -59,7 +59,7 @@ html, body, div, span, applet, object, iframe,
     height: 100%;
     min-height: 100%;
     min-width: 100%;
-    // scroll-behavior: smooth;
+    scroll-behavior: smooth;
   }
 
   button, a, i {
@@ -67,6 +67,11 @@ html, body, div, span, applet, object, iframe,
     &:hover {
       opacity: .8;
     }
+    scroll-behavior: smooth;
+  }
+
+  .ReactModal__Body--open{
+    overflow: hidden;
   }
 
   #app {

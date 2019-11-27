@@ -45,9 +45,14 @@ export const DefaultThemes = {
   colorStyled: {
     ColorWhite: '#ffffff',
     ColorBlack: '#000000',
+    ColorBgSide: '#9b59b6',
+    ColorIcon: '#be9cd1',
+    ColorTextSelect: '#c2b0df',
+    ColorBgActive: '#673ab7',
+    ColorTransparent: 'transparent',
+    
     ColorBlackGrey: '#5e615e',
     ColorBgDefault: '#ff5402',
-    ColorTransparent: 'transparent',
     ColorBgDefaultHover: '#d67f04',
     ColorRatingStar: '#ffd400',
     ColorBgUser: '#ff5502',
@@ -63,7 +68,6 @@ export const DefaultThemes = {
     ColoraBtnCancel: '#ffffff',
     ColorBorder: '#d9d9d9',
     ColorWarming: '#b52d2d',
-    ColorIcon: '#eb9388',
     ColorIconHover: '#d50000',
     ColorBtnFb: '#3b5998',
     iconAddColor: '#2fa3e6',

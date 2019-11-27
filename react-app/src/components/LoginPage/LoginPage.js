@@ -6,7 +6,7 @@ import {
   RegisterPageWrap,
   RegisterRightWrap,
   RegisterFormWrap,
-  RegisterTitle,
+  RegisterLogo,
   RegisterTitleText,
 } from '../RegisterPage/RegisterPage.style';
 
@@ -18,7 +18,9 @@ class LoginPage extends Component {
           <BackgroundLeft />
 
           <RegisterRightWrap>
-            <RegisterTitle>SiteVibes</RegisterTitle>
+            <RegisterLogo>
+              <img src="./images/site-vibes-logo.png" alt="logo-login" />
+            </RegisterLogo>
             <RegisterTitleText>Welcome back, good to see you again!</RegisterTitleText>
 
             <RegisterFormWrap>

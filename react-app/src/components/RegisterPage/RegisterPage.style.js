@@ -45,6 +45,15 @@ export const RegisterTitleSub = styled.div`
   margin-bottom: 3em;
 `;
 
+export const RegisterLogo = styled.div`
+  width: 12em;
+  margin-bottom: .5em;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+`;
+
 export const RegisterTitleText = styled.div`
   font-weight: 600;
   margin-bottom: 3em;

@@ -11,7 +11,7 @@ export const PaymentInfoWrap = styled.div`
 
 export const PaymentInfoHeaderWrap = styled.div`
   padding: 2em;
-  background-color: ${props => props.theme.colorStyled.ColorPurple};
+  background-color: ${props => props.theme.colorStyled.ColorBgSide};
   .bill-method {
     > div {
       background-color: transparent;
@@ -82,8 +82,13 @@ export const PaymentDescription = styled.div`
   }
 `;
 
-export const PaymentInfoTax = styled(PaymentInfoMathWrap)`
+export const PaymentInfoTax = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 1.5em;
   margin-top: 1.5em;
+  border-bottom: 1px solid ${props => props.theme.colorStyled.ColorBorder};
 `;
 
 export const PaymentInfoTotal = styled.div`

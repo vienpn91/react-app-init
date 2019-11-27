@@ -61,7 +61,6 @@ export const DefaultThemes = {
     ColorSecond: '#586069',
     ColorLabel: '#586069',
     ColorGrey: '#dfdfdf',
-    ColorBorder: '#dddddd',
     ColorDarkGrey: '#9b9b9b',
     ColorMidGrey: '#4a4a4a',
     ColoraBtnPrimary: '#2697ea',
@@ -85,7 +84,6 @@ export const DefaultThemes = {
     ColorSusscess: '#05ca05',
     ColorEdit: '#00000087',
 
-    ColorPurple: '#9b59b6',
     ColorGreen: '#7bc867',
     ColorMidBlue: '#4895ab',
     ColorMidGreen: '#38785c',

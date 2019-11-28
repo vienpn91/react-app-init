@@ -1,15 +1,23 @@
 import React from "react";
-import { Collapse, Icon, Card } from "antd";
+import { Collapse, Icon } from "antd";
 
-import { DashboardContainer, TitlePage, ContentPage } from "./Dashboard.style";
+import {
+  DashboardContainer,
+  TitlePage,
+  ContentPage,
+  ContentPanel,
+  CollapseCustomized,
+  CardCustomized,
+  MetaCustomized,
+} from "./Dashboard.style";
 
 const text = `
-  A dog is a type of domesticated animal.
-  Known for its loyalty and faithfulness,
-  it can be found as a welcome guest in many households across the world.
+Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+minim veniam, quis nostrud exercitation ullamco laboris nisi ut
 `;
 const { Panel } = Collapse;
-const { Meta } = Card;
+
 class Dashboard extends React.PureComponent {
   render() {
     return (
@@ -25,41 +33,40 @@ class Dashboard extends React.PureComponent {
           culpa qui officia deserunt mollit anim id est laborum.
         </ContentPage>
 
-        <Collapse
+        <CollapseCustomized
           bordered={false}
           defaultActiveKey={["1"]}
           expandIcon={({ isActive }) => (
             <Icon type="right" rotate={isActive ? 90 : 0} />
           )}
         >
-          <Panel
-            header="Step 1: Install SiteVibes"
-            key="1" 
-          >
+          <Panel header="Step 1: Install SiteVibes" key="1">
             <React.Fragment>
-            <Card
-              hoverable
-              style={{ width: 240 }}
-              cover={<Icon type="code" />}
-            >
-              <Meta title="Installation" description="Set up your initial configuration and receive your Site Search installation snippet." />
-            </Card>
-
+              <ContentPanel>
+                The next step is to install Site Vibes into your website
+              </ContentPanel>
+              <ContentPanel>
+                Click the button below to get your unique pixel to plae in the
+                globla header of your websitee
+              </ContentPanel>
+              <CardCustomized
+                hoverable
+                cover={<Icon type="code" />}
+              >
+                <MetaCustomized
+                  title="Installation"
+                  description="Set up your initial configuration and receive your Site Search installation snippet."
+                />
+              </CardCustomized>
             </React.Fragment>
           </Panel>
-          <Panel
-            header="Step 2: Test and check the results"
-            key="2"
-          >
-            <p>{text}</p>
+          <Panel header="Step 2: Test and check the results" key="2">
+            <ContentPanel>>{text}</ContentPanel>
           </Panel>
-          <Panel
-            header="Step 3: Done"
-            key="3"
-          >
-            <p>{text}</p>
+          <Panel header="Step 3: Done" key="3">
+            <ContentPanel>>{text}</ContentPanel>
           </Panel>
-        </Collapse>
+        </CollapseCustomized>
       </DashboardContainer>
     );
   }

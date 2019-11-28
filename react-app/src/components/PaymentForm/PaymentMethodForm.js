@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Form, Input, Col, Row, Select, Icon, DatePicker } from 'antd';
+import { Form, Input, Col, Row, Icon, DatePicker } from 'antd';
 
 import {
   PaymentFormItem,
@@ -8,7 +8,6 @@ import {
   PaymentSubContent,
 } from '../PaymentPage/PaymentPage.style';
 
-const { Option } = Select;
 const { MonthPicker } = DatePicker;
 
 class PaymentMethodForm extends Component {

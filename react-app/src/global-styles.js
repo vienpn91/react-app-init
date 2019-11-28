@@ -113,13 +113,16 @@ html, body, div, span, applet, object, iframe,
     margin-bottom: 10px !important;
   }
   .ant-form-item-label {
-    line-height: 28px !important;
+    line-height: 32px !important;
     font-weight: 600;
     label{
       &:after {
         content: none !important;;
       }
     }
+  }
+  .ant-form-explain {
+    margin-top: 3px;
   }
   .ant-select-selection,
   .ant-input {

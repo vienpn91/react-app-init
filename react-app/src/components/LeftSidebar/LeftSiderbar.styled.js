@@ -74,6 +74,16 @@ export const MenuCustomized = styled(Menu).attrs({
       
     }
   }
+  .ant-menu-item {
+    color: ${props => props.theme.colorStyled.ColorWhite};
+    a {
+      color: ${props => props.theme.colorStyled.ColorWhite};
+      text-decoration: none;
+      &:hover {
+        opacity: 1;
+      }
+    }
+  }
 
   .ant-menu-submenu-arrow{
     display: none;

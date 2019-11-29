@@ -128,6 +128,31 @@ html, body, div, span, applet, object, iframe,
   .ant-input {
     border-color: #aaa;
   }
+  .ant-select-selection--single {
+    height: 36px !important;
+  }
+  .modal-customize {
+    .ant-modal-header{
+      padding: 2em 3em;
+      border: none;
+      .ant-modal-title{
+        font-weight: 600;
+        font-size: 1.4em;
+      }
+    }   
+    .ant-modal-body{  
+      padding: 0em 3em 3em 3em;
+    }
+    .ant-modal-footer{
+      display: none!important;
+    }
+  }
+  .ant-popover-inner-content {
+    padding: 0px !important;
+  }
+  .ant-popover-title {
+    font-weight: 700 !important;
+  }
 `;
 
 export default GlobalStyle;

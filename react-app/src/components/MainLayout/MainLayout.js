@@ -1,5 +1,5 @@
 import React, { PureComponent } from 'react';
-import LeftSiderbar from '../LeftSidebar/LeftSiderbar';
+import LeftSiderbar from '../../containers/LeftSidebar';
 import {
   PrimaryLayout,
   RightContent

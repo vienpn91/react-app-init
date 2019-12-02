@@ -8,3 +8,10 @@ export const ButtonPrimary = styled.button`
   background-color: ${props => props.theme.colorStyled.ColorBgSide};
   outline: none;
 `;
+
+export const GroupAction = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 1.25em;
+`;

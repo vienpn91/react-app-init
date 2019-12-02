@@ -7,6 +7,7 @@ import RegisterPage from './containers/RegisterPage';
 import ForgotPassword from './containers/ForgotPassword';
 import Dashboard from './containers/Dashboard';
 import PaymentPage from './containers/PaymentPage';
+import CreateNotificationForm from './containers/CreateNotificationForm';
 
 class Router extends Component {
   render() {
@@ -20,6 +21,7 @@ class Router extends Component {
         <MainLayout>
           <Switch>
             <Route exact path="/dashboard" component={Dashboard} />
+            <Route exact path="/create-notification" component={CreateNotificationForm} />
           </Switch>
         </MainLayout>
       </Switch>

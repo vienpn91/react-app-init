@@ -1,5 +1,5 @@
 import { connect } from 'react-redux';
-import CampaignForm from '../../components/CreateCampaignForm';
+import CreateCampaignForm from '../../components/CreateCampaignForm';
 import {
   selectors as CampaignSelectors,
   actions as CampaignActions,
@@ -13,4 +13,4 @@ const mapDispatchToProps = {
   closeCreateCampaignModal: CampaignActions.closeCreateCampaignModal,
 };
 
-export default connect(mapStateToProps, mapDispatchToProps)(CampaignForm);
+export default connect(mapStateToProps, mapDispatchToProps)(CreateCampaignForm);

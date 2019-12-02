@@ -9,9 +9,11 @@ import FormInput from '../FormInput';
 import {
   ModalHeader,
   ModalContent,
-  ModalGroupAction,
-} from '../../stylesheets/General.style';
-import { ButtonPrimary } from '../../stylesheets/Button.style';
+} from '../../stylesheets/general.style';
+import {
+  GroupAction,
+  ButtonPrimary,
+} from '../../stylesheets/Button.style';
 import { CampaignDescription } from './CreateCampaignForm.style';
 
 const modalStyles = {
@@ -90,9 +92,9 @@ class CreateCampaignForm extends Component {
             NOT work on other domains other than what you write here.
           </CampaignDescription>
 
-          <ModalGroupAction>
+          <GroupAction>
             <ButtonPrimary type="submit">Submit</ButtonPrimary>
-          </ModalGroupAction>
+          </GroupAction>
         </Form>
       )}
     </Formik>

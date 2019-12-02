@@ -65,10 +65,11 @@ html, body, div, span, applet, object, iframe,
 
   button, a, i {
     cursor: pointer;
+    outline: none;
+    scroll-behavior: smooth;
     &:hover {
       opacity: .8;
     }
-    scroll-behavior: smooth;
   }
 
   .ReactModal__Body--open{
@@ -117,7 +118,7 @@ html, body, div, span, applet, object, iframe,
     font-weight: 600;
     label{
       &:after {
-        content: none !important;;
+        content: none !important;
       }
     }
   }
@@ -126,7 +127,7 @@ html, body, div, span, applet, object, iframe,
   }
   .ant-select-selection,
   .ant-input {
-    border-color: #aaa;
+    border-color: #aaa !important;
   }
   .ant-select-selection--single {
     height: 36px !important;
